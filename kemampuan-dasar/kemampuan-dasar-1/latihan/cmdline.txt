@@ -1,0 +1,18 @@
+open  /Applications/Safari.app/
+
+ls ~ | pbcopy
+pbcopy < blogpost.txt
+
+curl http://www.google.com/doodles\#oodles/archive | grep -A5 'latest-doodle on' | grep 'img src' | sed s/.*'<img src="\/\/'/''/ | sed s/'" alt=".*'/''/ | pbcopy
+zsh: no matches found: s/.*<img src="\/\///
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  739k  100  739k    0     0   377k      0  0:00:01  0:00:01 --:--:--  378k
+
+screencapture -C -M image.png
+
+screencapture -c -W
+could not create image from window
+screencapture -s -t pdf image.pdf
+
+say "Never trust a computer you can't lift."
